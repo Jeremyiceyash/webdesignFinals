@@ -203,7 +203,7 @@ header {
 #footer-div img {
     width: 120px; 
     height: auto;
-    margin-right: 200px; 
+    margin-right: 20px; 
 }
 
 .footer-text {
@@ -216,8 +216,10 @@ header {
     font-family: Arial;
     font-size: 18px;
     font-weight: bold;
-    color:rgb(86, 101, 49);
+    color: rgb(86, 101, 49);
     margin: 0;
+    text-align: center; 
+    margin-left: 320px;
 }
 
 .footer {
