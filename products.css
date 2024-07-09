@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: 40px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoName{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(86, 101, 49);
+    margin: 0; 
+}
+
+.logopic img{
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    font-weight: bold;
+    display: block;
+    color: rgb(86, 101, 49);
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: white;
+    background: rgb(211, 162, 26);
+}
+
+.nav-bar ul li a.active {
+    color: white;
+    background: rgb(211, 162, 26);
+}
+    
+.row {
+    margin: 10px;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.sidebar ul li a{
+    display: block;
+    color: rgb(86, 101, 49);
+    font-size: 15px;
+    padding: 6px 10px;
+}
+
+.mainpicture2{
+    flex: 1;
+}
+
+.mainpicture2 img {
+    width: 800px;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+    margin-left: 25px;
+}
+
+.content {
+    flex: 1; 
+    width: 66%;
+    background-color: rgb(86, 101, 49);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 1px; 
+    margin-left: 35px;
+    border-radius: 30px;
+}
+
+.paragraph{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#footer-div {
+    width: 100%;
+    padding: 20px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: flex;
+    align-items: center; 
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+#footer-div img {
+    width: 120px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.footer, .footer2 {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(86, 101, 49);
+    margin: 0;
+    text-align: center; 
+    margin-left: 320px;
+}
+
+.footer {
+    margin-bottom: 5px; 
+}
