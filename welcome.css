@@ -36,7 +36,13 @@ header {
 }
 
 .logopic img{
+    transition: 0.5s ease;
+    cursor: pointer;
     width: 100%;
+}
+
+.logopic img:hover {
+    transform: scale(1.05);
 }
 
 .nav-bar ul {
@@ -65,31 +71,60 @@ header {
 }
 
 .row {
+    display: flex;
     margin: 10px;
-    display: flex; 
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .sidebar {
-    margin-top: 0px;
-    width: 30%; 
+    width: 15%;
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
 }
 
-.sidebar ul li a{
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
     display: block;
     color: rgb(86, 101, 49);
     font-size: 15px;
     padding: 6px 10px;
+    text-decoration: none;
 }
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+    border-radius: 50px;
+}
+
 .mainpicture {
     flex: 1; 
 }
 
 .mainpicture img {
-    width: 575px;
+    width: 480px;
     height: auto;
-    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
     border-radius: 50px;
+    overflow: hidden;
+    margin-left: 25px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.mainpicture img:hover {
+    transform: scale(1.05);
 }
 
 .pic1 {
@@ -99,10 +134,17 @@ header {
 .pic1 img {
     width: 230px;
     height: auto;
-    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
     border-radius: 50px;
+    overflow: hidden;
     margin-left: 20px;
     margin-top: 0px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.pic1 img:hover {
+    transform: scale(1.05);
 }
 
 .pic2 {
@@ -112,10 +154,17 @@ header {
 .pic2 img {
     width: 230px;
     height: auto;
-    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
     border-radius: 50px;
+    overflow: hidden;
     margin-left: 8px;
     margin-top: 150px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.pic2 img:hover {
+    transform: scale(1.05);
 }
 
 .content {
@@ -129,6 +178,7 @@ header {
     margin-top: 40px; 
     margin-left: 145px;
     border-radius: 30px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
 }
 
 .paragraph{
@@ -149,10 +199,16 @@ header {
 .pic3 img {
     width: 300px;
     height: auto;
-    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
     border-radius: 50px;
     margin-left: 125px;
     margin-top: 50px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.pic3 img:hover {
+    transform: scale(1.05);
 }
 
 .pic4 {
@@ -163,11 +219,17 @@ header {
     position: absolute;
     width: 300px;
     height: auto;
-    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
     border-radius: 50px;
     margin-left: 38px;
     margin-top: 133px;
     margin-bottom: 50px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.pic4 img:hover {
+    transform: scale(1.05);
 }
 
 .pic5 {
@@ -178,10 +240,16 @@ header {
     position: absolute;
     width: 380px;
     height: auto;
-    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
     border-radius: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.pic5 img:hover {
+    transform: scale(1.05);
 }
 
 #footer-div {

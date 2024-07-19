@@ -36,7 +36,13 @@ header {
 }
 
 .logopic img{
+    transition: 0.5s ease;
+    cursor: pointer;
     width: 100%;
+}
+
+.logopic img:hover {
+    transform: scale(1.05);
 }
 
 .nav-bar ul {
@@ -65,16 +71,41 @@ header {
 }
     
 .row {
+    display: flex;
     margin: 10px;
-    display: flex; 
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
-.sidebar ul li a{
+.sidebar {
+    width: 15%;
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
     display: block;
     color: rgb(86, 101, 49);
     font-size: 15px;
     padding: 6px 10px;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+    border-radius: 50px;
 }
 
 .mainpicture2{
@@ -86,7 +117,14 @@ header {
     height: auto;
     display: block;
     border-radius: 50px;
-    margin-left: 25px;
+    margin-left: 125px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+}
+
+.mainpicture2 img:hover {
+    transform: scale(1.05);
 }
 
 .content {
@@ -97,14 +135,71 @@ header {
     color: white;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 1px; 
+    margin-top: 50px; 
     margin-left: 35px;
     border-radius: 30px;
+    margin-left: 260px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
 }
 
 .paragraph{
     font-size: 15px;
     line-height: 25px;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    margin-left: 240px;
+}
+
+.container {
+    position: relative;
+    width: 250px;
+    margin-top: 50px;
+    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+    border-radius: 50px;
+}
+
+.image {
+    display: block;
+    width: 100%; 
+    height: auto;
+    border-radius: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(128, 99, 18);
+    border-radius: 50px;
+    transform: scale(1.04);
+    transition: 0.3s ease-in-out;
+}
+
+.container:hover .overlay {
+    opacity: 50%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: Arial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
 }
 
 #footer-div {

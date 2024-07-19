@@ -69,141 +69,130 @@ header {
     color: white;
     background: rgb(211, 162, 26);
 }
-    
-.row {
+
+.main-container {
     display: flex;
-    margin: 10px;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px); 
 }
 
-.sidebar {
-    width: 15%;
-    background-color: #efefef;
-    padding: 10px;
-    border-radius: 30px;
-    margin-left: 10px;
-    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 70px;
+    background-color: rgb(230, 171, 10); 
 }
 
-.sidebar ul {
-    padding: 0;
-    margin: 0;
+.login-header {
+    text-align: center;
+    background: none; 
+    padding: 0; 
+    border-radius: 70px;
 }
 
-.sidebar ul li {
-    list-style: none;
-    margin-bottom: 10px;
+.login-header header {
+    background: none; 
+    padding: 0; 
+    border-radius: 0; 
+    color: #ffffff; 
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
 }
 
-.sidebar ul li a {
-    display: block;
-    color: rgb(86, 101, 49);
+.input-box, .input-field { 
+    width: 100%;
+    height: 40px;
     font-size: 15px;
-    padding: 6px 10px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: #efefef;
+    outline: none;
+    transition: .3s;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: rgb(66, 77, 39);
+}
+
+.input-field:focus {
+    width: 105%;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#check {
+    margin-right: 10px;
+}
+
+a {
     text-decoration: none;
 }
 
-.sidebar ul li a:hover {
-    background-color: #ddd;
-    border-radius: 50px;
+a:hover {
+    text-decoration: underline;
 }
 
-.parent-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; 
-    margin-left: auto;
-    margin-right: auto;
+section a {
+    color: #ffffff;
 }
 
-.container {
+.input-submit {
     position: relative;
-    width: 250px;
-    margin-top: 50px;
-    box-shadow: 0 8px 2px rgb(0, 0, 0, 0.2);
-    border-radius: 50px;
 }
 
-.image {
-    display: block;
+.submit-btn {
     width: 100%;
-    height: auto;
+    height: 60px;
+    background: #ffffff;
+    border: none;
     border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s
 }
 
-.text {
-    color: white;
-    font-size: 20px;
+.input-submit label {
     position: absolute;
-    font-family: Arial;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     font-weight: bold;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(110, 95, 54);
-    border-radius: 50px;
-}
-
-.container:hover .overlay {
-    opacity: 75%;
-}
-
-.content {
-    flex: 1; 
-    width: 67%;
-    background-color: rgb(211, 162, 26);
-    padding: 10px;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    margin-left: 290px;
-    border-radius: 40px;
-    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
-}
-
-.paragraph{
-    font-size: 15px;
-    line-height: 25px;
-}
-
-.content2 {
-    flex: 1; 
-    width: 15%;
-    background-color: rgb(211, 162, 26);
-    padding: 10px;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    margin-top: 40px; 
-    margin-left: 600px;
-    border-radius: 40px;
-    box-shadow: 0 8px 2px rgb(0, 0, 0 , 0.2);
-    transition: 0.5s ease;
+    color: rgb(66, 77, 39);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
-.content2:hover {
-    transform: scale(1.3);
+.submit-btn:hover {
+    background: #c3b27b;
+    transform: scale(1.05, 1);
 }
 
-.paragraph2{
-    font-size: 25px;
-    line-height: 25px;
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a {
     font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 #footer-div {
